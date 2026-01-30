@@ -9,7 +9,7 @@ public class StudentDAOImpl {
     public int addStudent(Student student){
         return -1;
     }
-    public Student getStudentId(int studentId){
+    public Student getStudentById(int studentId){
         return null;
     }
     public void updateStudent(Student student){

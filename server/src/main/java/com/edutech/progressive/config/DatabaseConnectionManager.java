@@ -1,6 +1,7 @@
 package com.edutech.progressive.config;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -16,7 +17,7 @@ public class DatabaseConnectionManager {
         try (FileInputStream fis=new FileInputStream(PROPERTIES_FILE)){
             properties.load(fis);
             
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.out.println("Error loading properties file: "+e.getMessage());
         }
     }
